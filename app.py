@@ -62,5 +62,4 @@ def weekly_summary():
     return render_template('summary.html', total_intake=total_intake, weekly_average=weekly_average)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
-
+    app.run(debug=True)
