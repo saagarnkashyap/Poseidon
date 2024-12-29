@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tracker</title>
+</head>
+<body>
+    <h1>Welcome to Water Tracker</h1>
+    <form action="/log" method="POST">
+        <label for="intake">Enter your daily water intake (liters):</label>
+        <input type="number" step="0.1" name="intake" required>
+        <button type="submit">Log Intake</button>
+    </form>
+    <a href="/weekly_summary">See Weekly Summary</a>
+</body>
+</html>
